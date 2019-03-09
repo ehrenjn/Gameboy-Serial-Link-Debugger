@@ -12,17 +12,16 @@ It's normal to have a few random bytes in the middle (like the ones seen in the 
 When a byte is recieved it will be printed, starting in the top left corner of the screen.
 When the byte printout reaches the bottom right of the screen it will wrap back up to the top left.
 
-non-blank ASCII bytes (or more specifically, ASCII chars 33 - 126) are displayed as ASCII characters,
+visable ASCII bytes (or more specifically, ASCII chars 32 - 126 inclusive) are displayed as ASCII characters,
 whereas bytes that are blank (or outside of ASCII range) are displayed as 2 digit hexidecimal numbers.
 A line is also included under each hex number to increase readability.
 
-Note that a space is printed in its hexidecimal representation (0x20) instead of as a blank character. 
-This is to avoid having any part of screen blank so you can easily tell when you're recieving information.
+Note that a space is the only character that appears completely blank. 
 
 Below is an image of characters that can be printed (in order from 0x00 to 0xFF) look like:
 
-![](https://i.imgur.com/N4xdjxV.jpg)
+![](https://i.imgur.com/8YLUTUj.jpg)
 
 What they all look like printed on an actual Game Boy:
 
-![](https://i.imgur.com/RBGDQas.jpg)
+![](https://i.imgur.com/Qi00Nm5.jpg)

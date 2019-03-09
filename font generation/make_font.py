@@ -30,7 +30,7 @@ def bin_chars_to_byte_str(bin_chars):
 def add_in_ascii(bin_char_str):
         with open('ascii_font.chr', 'rb') as ascii_font:
                 ascii_bin_char = ascii_font.read()
-        good_ascii_start = 33 * 16 #chars between char 33 (space) and 127 (DEL) are visible in ascii
+        good_ascii_start = 32 * 16 #chars between char 32 (space) and 127 (DEL) are visible in ascii
         good_ascii_end = 127 * 16 #*16 since each char is represented by 16 bytes
         good_ascii_chars = ascii_bin_char[good_ascii_start: good_ascii_end]
         return bin_char_str[:good_ascii_start] + good_ascii_chars + bin_char_str[good_ascii_end:]
