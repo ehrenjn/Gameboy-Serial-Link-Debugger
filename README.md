@@ -4,7 +4,7 @@ A Game Boy ROM to help debug link cable connections in which the Game Boy is the
 
 When the ROM boots up the initial screen will look something like this:
 
-![](https://imgur.com/YSRo812)
+![](https://i.imgur.com/YSRo812.jpg)
 
 There are 0's everywhere because the initial state of the Game Boy's VRAM is filled with null bytes. 
 It's normal to have a few random bytes in the middle (like the ones seen in the image).
